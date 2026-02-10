@@ -1,0 +1,33 @@
+# --- Kernel Build Artifacts ---
+*.o
+*.ko
+*.mod
+*.mod.c
+*.order
+*.symvers
+*.cmd
+.tmp_versions/
+.*.cmd
+.cache.mk
+
+# --- Backup and Swap Files (Editors) ---
+# Emacs
+*~
+\#*\#
+/.emacs.desktop
+/.emacs.desktop.lock
+*.elc
+auto-save-list/
+tramp
+.\#*
+
+# Vim
+*.swp
+*.swo
+*.swn
+.netrwhist
+tags
+
+# --- System / OS Files ---
+.DS_Store
+.directory
