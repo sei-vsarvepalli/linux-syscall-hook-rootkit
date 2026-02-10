@@ -1,5 +1,10 @@
 obj-m += syscall_hook_rootkit.o
+
+KDIR := /lib/modules/$(shell uname -r)/build
+PWD  := $(shell pwd)
+
 all:
-	make -C ~/laab/linux M=$(PWD) modules
+	$(MAKE) -C $(KDIR) M=$(PWD) modules
+
 clean:
-	make -C ~/laab/linux M=$(PWD) clean
+	$(MAKE) -C $(KDIR) M=$(PWD) clean
